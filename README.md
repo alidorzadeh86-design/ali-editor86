@@ -1,2 +1,262 @@
-# ali-editor86
-ali-editor86
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>علی ادیتور | سایت رسمی</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.8;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #111827;
+      border-bottom: 1px solid #334155;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span,
+    h1 span,
+    h2 span {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: radial-gradient(circle at top, #1e3a8a, #0f172a 60%);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      font-size: 18px;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #082f49;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .card-icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+      border-top: 1px solid #334155;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        علی <span>ادیتور</span>
+      </div>
+
+      <div>
+        <a href="#home">خانه</a>
+        <a href="#about">درباره من</a>
+        <a href="#programs">برنامه‌ها</a>
+        <a href="#contact">ارتباط</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>سلام، من <span>علی</span> هستم 👋</h1>
+
+      <p>
+        به سایت رسمی علی ادیتور خوش آمدید.
+        اینجا می‌توانید با من، برنامه‌ها و پروژه‌هایم آشنا شوید.
+      </p>
+
+      <a class="button" href="#programs">
+        مشاهده برنامه‌ها
+      </a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>درباره <span>من</span></h2>
+
+    <div class="about">
+      <p>
+        من علی هستم و به ساخت برنامه‌ها و پروژه‌های نرم‌افزاری
+        علاقه دارم. در این سایت می‌توانید با فعالیت‌ها و پروژه‌های
+        من آشنا شوید.
+      </p>
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2>برنامه‌های <span>من</span></h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>برنامه اول</h3>
+        <p>توضیح کوتاه درباره برنامه اول.</p>
+        <a href="#">مشاهده برنامه</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>برنامه دوم</h3>
+        <p>توضیح کوتاه درباره برنامه دوم.</p>
+        <a href="#">مشاهده برنامه</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>برنامه سوم</h3>
+        <p>توضیح کوتاه درباره برنامه سوم.</p>
+        <a href="#">مشاهده برنامه</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>ارتباط با <span>من</span></h2>
+
+      <p>
+        لینک‌های ارتباطی خودت را می‌توانیم در این قسمت قرار دهیم.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 سایت علی ادیتور
+  </footer>
+
+</body>
+</html>
